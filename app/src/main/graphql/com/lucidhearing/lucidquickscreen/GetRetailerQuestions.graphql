@@ -1,0 +1,11 @@
+query GetRetailerQuestions($reatailerCode:String, $typeCode:String){
+  GetRetailerQuestions(reatailerCode:$reatailerCode, typeCode:$typeCode){
+    code
+    questionTextPhrase{
+      value
+      phraseTranslations{
+        translation
+      }
+    }
+  }
+}

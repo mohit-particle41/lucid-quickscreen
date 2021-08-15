@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.lucidhearing.lucidquickscreen.presentation.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_customerLogin"
+            app:destination="@id/customerLogin" />
+    </fragment>
+    <fragment
+        android:id="@+id/customerLogin"
+        android:name="com.lucidhearing.lucidquickscreen.presentation.CustomerDetailsFragment"
+        android:label="fragment_customer_login"
+        tools:layout="@layout/fragment_customer_details" >
+        <action
+            android:id="@+id/action_customerLogin_to_lifestyleQuestionFragment"
+            app:destination="@id/lifestyleQuestionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultGraphFragment"
+        android:name="com.lucidhearing.lucidquickscreen.presentation.ResultGraphFragment"
+        android:label="fragment_result_graph"
+        tools:layout="@layout/fragment_result_graph" >
+        <action
+                android:id="@+id/action_resultGraphFragment_to_productRecommendationFragment"
+                app:destination="@id/productRecommendationFragment" />
+        <action
+                android:id="@+id/action_resultGraphFragment_to_noRecommendationFragment"
+                app:destination="@id/noRecommendationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lifestyleQuestionFragment"
+        android:name="com.lucidhearing.lucidquickscreen.presentation.LifestyleQuestionFragment"
+        android:label="fragment_lifestyle_question"
+        tools:layout="@layout/fragment_lifestyle_question" >
+        <action
+            android:id="@+id/action_lifestyleQuestionFragment_to_resultGraphFragment"
+            app:destination="@id/resultGraphFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/productRecommendationFragment"
+            android:name="com.lucidhearing.lucidquickscreen.presentation.ProductRecommendationFragment"
+            android:label="fragment_product_recommendation"
+            tools:layout="@layout/fragment_product_recommendation" />
+    <fragment
+            android:id="@+id/noRecommendationFragment"
+            android:name="com.lucidhearing.lucidquickscreen.presentation.NoRecommendationFragment"
+            android:label="fragment_no_recommendation"
+            tools:layout="@layout/fragment_no_recommendation" />
+</navigation>

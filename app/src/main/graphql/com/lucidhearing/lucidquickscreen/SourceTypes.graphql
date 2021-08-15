@@ -1,0 +1,7 @@
+query SourceTypes{
+  sourceTypes{
+    id
+    code
+    name
+  }
+}

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        tools:context=".presentation.util.ConnectWifiNetworkDialogFragment">
+
+<com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textview_network_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:textSize="18sp"
+        android:textColor="@color/lq_blue"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textfield_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:hint="Password"
+            app:boxBackgroundColor="@color/white"
+            app:boxCornerRadiusBottomEnd="12dp"
+            app:boxCornerRadiusBottomStart="12dp"
+            app:boxCornerRadiusTopEnd="12dp"
+            app:boxCornerRadiusTopStart="12dp"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:endIconMode="password_toggle"
+            app:errorIconTint="@color/lq_error_red"
+            app:errorTextColor="@color/lq_error_red"
+            app:hintTextAppearance="@style/LoginFormTextInputHintLabel"
+            android:layout_below="@+id/textview_network_name">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textfield_firstname_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_light"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:maxLength="25"
+                android:textSize="14sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_dismiss"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="40dp"
+            android:backgroundTint="@color/lq_blue"
+            android:fontFamily="@font/poppins_medium"
+            android:inputType="textCapSentences"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/button_dismiss"
+            android:textColor="@color/button_text_color"
+            android:textSize="14sp"
+            app:cornerRadius="6dp"
+            android:enabled="true"
+            android:layout_below="@+id/textfield_password"
+            android:layout_toLeftOf="@id/button_connect"/>
+
+    <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_connect"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/button_background_color"
+            android:fontFamily="@font/poppins_medium"
+            android:inputType="textCapSentences"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/button_connect"
+            android:textColor="@color/button_text_color"
+            android:textSize="14sp"
+            app:cornerRadius="6dp"
+            android:enabled="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/textfield_password"/>
+</RelativeLayout>

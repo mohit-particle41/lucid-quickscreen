@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="20dp"
+    android:paddingHorizontal="80dp">
+
+    <ImageView
+        android:id="@+id/imageViewAvatar"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/lq_grey"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textview_question"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/lq_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewAvatar"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Question" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textview_yes"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/lq_grey"
+        app:layout_constraintStart_toStartOf="@+id/textview_question"
+        app:layout_constraintTop_toBottomOf="@+id/textview_question"
+        tools:text="YES" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textview_No"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/lq_grey"
+        app:layout_constraintStart_toEndOf="@+id/textview_yes"
+        app:layout_constraintTop_toBottomOf="@+id/textview_question"
+        tools:text="NO" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

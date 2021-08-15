@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        tools:context=".presentation.util.DisconnectWifiNetworkDialogFragment">
+
+    <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textview_network_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:textSize="18sp"
+            android:textColor="@color/lq_blue"
+            android:text=""/>
+
+    <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_dismiss"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="40dp"
+            android:backgroundTint="@color/lq_blue"
+            android:fontFamily="@font/poppins_medium"
+            android:inputType="textCapSentences"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/button_dismiss"
+            android:textColor="@color/button_text_color"
+            android:textSize="14sp"
+            app:cornerRadius="6dp"
+            android:enabled="true"
+            android:layout_below="@+id/textview_network_name"
+            android:layout_toLeftOf="@id/button_disconnect"/>
+
+    <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_disconnect"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/lq_red"
+            android:fontFamily="@font/poppins_medium"
+            android:inputType="textCapSentences"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/button_disconnect"
+            android:textColor="@color/button_text_color"
+            android:textSize="14sp"
+            app:cornerRadius="6dp"
+            android:enabled="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/textview_network_name"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/lq_blue"
+    android:paddingTop="20dp">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/image_number"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text=""
+        android:textColor="@color/white"
+        android:background="@drawable/img_num_border"
+        android:src="@drawable/icon_number_1" />
+
+    <TextView
+        android:id="@+id/textview_que"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:layout_toRightOf="@id/image_number"
+        android:fontFamily="@font/poppins_light"
+        android:gravity="start"
+        android:maxLines="3"
+        android:text="@string/question_1"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_que"
+        android:layout_alignLeft="@id/textview_que"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_button_true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/white"
+            android:text="@string/answer_yes"
+            android:textColor="@color/white"
+            />
+
+        <RadioButton
+            android:id="@+id/radio_button_false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:buttonTint="@color/white"
+            android:text="@string/answer_no"
+            android:textColor="@color/white" />
+    </RadioGroup>
+
+</RelativeLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lq_blue"
+        android:orientation="vertical"
+        tools:context=".presentation.ResultGraphFragment">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+                android:id="@+id/progress_bar_scan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:visibility="gone"
+                app:indicatorColor="@color/lq_scan_progress"
+                app:trackThickness="5dp"
+                android:layout_alignParentTop="true" />
+
+        <ImageButton
+                android:id="@+id/button_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/ic_action_back"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true" />
+
+        <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_rescan"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_gravity="top"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/button_background_color"
+                android:enabled="true"
+                android:fontFamily="@font/poppins_medium"
+                android:inputType="textCapSentences"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="Result"
+                android:textSize="14sp"
+                app:cornerRadius="6dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+    <TextView
+            android:id="@+id/textview_scan_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="@string/scan_status_complete"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginTop="25dp" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="40dp">
+
+        <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="70dp"
+                android:text="Left ear"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="start"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/result_chart_left"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:layout_marginHorizontal="80dp" />
+
+        <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="70dp"
+                android:text="Right ear"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="start"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_marginTop="50dp" />
+
+        <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/result_chart_right"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:layout_marginHorizontal="80dp" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/section_next_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="60dp"
+            android:visibility="gone">
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingEnd="15dp"
+                android:text="@string/see_result_message"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_next"
+                android:layout_width="150dp"
+                android:layout_height="55dp"
+                android:layout_gravity="top"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="0dp"
+                android:backgroundTint="@color/button_background_color"
+                android:enabled="true"
+                android:fontFamily="@font/poppins_medium"
+                android:inputType="textCapSentences"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="@string/button_next"
+                android:textSize="18sp"
+                app:cornerRadius="12dp" />
+    </LinearLayout>
+
+</LinearLayout>

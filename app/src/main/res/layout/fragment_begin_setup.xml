@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/container_begin_setup_fragment"
+        android:background="@color/lq_blue"
+        tools:context=".presentation.setup.BeginSetupFragment">
+
+    <RelativeLayout
+            android:id="@+id/navigation_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true">
+
+        <ImageButton
+                android:id="@+id/button_back"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/ic_action_back" />
+
+    </RelativeLayout>
+
+    <ImageView
+            android:id="@+id/img_retailer_logo"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/logo_lucid_hearing"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="40dp"
+            android:layout_below="@id/navigation_header"/>
+
+    <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_begin_setup"
+            android:layout_width="170dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/button_background_color"
+            android:fontFamily="@font/poppins_medium"
+            android:inputType="textCapSentences"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/button_begin_setup"
+            android:textColor="@color/button_text_color"
+            android:textSize="18sp"
+            app:cornerRadius="10dp"
+            android:enabled="true"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/img_retailer_logo" />
+
+
+
+</RelativeLayout>

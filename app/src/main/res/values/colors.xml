@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="lq_blue">#163967</color>
+    <color name="lq_red">#DE4343</color>
+    <color name="lq_red1">#00DE4343</color>
+    <color name="lq_error_red">#F14949</color>
+    <color name="lq_disable">#D5E3F6</color>
+    <color name="lq_scan_progress">#FFE189</color>
+    <color name="lq_grey">#904A525E</color>
+    <color name="lq_light_grey">#80AFAFAF</color>
+    <color name="lq_error_notification">#FF5722</color>
+    <color name="lq_success_notification">#4CAF50</color>
+    <color name="lq_snackbar_action">#565656</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#d84315</color>
+
+</resources>

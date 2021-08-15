@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lq_blue"
+        android:orientation="vertical"
+        tools:context=".presentation.ProductRecommendationFragment">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <ImageButton
+                        android:id="@+id/button_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_action_back"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:visibility="invisible"/>
+
+            </RelativeLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/textview_scan_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="You may have some mild to moderate hearing loss.\nPlease ask an associate about products we offer to help you hear better"
+                    android:textColor="@color/white"
+                    android:gravity="left"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="18sp"
+                    android:paddingHorizontal="60dp"
+                    android:layout_marginTop="20dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_product_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="172dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingRight="30dp">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/email_result_message"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textSize="18sp"
+                        android:paddingStart="60dp"
+                        android:paddingEnd="20dp"
+                        android:paddingBottom="10dp"
+                        android:layout_weight="2"
+                        android:layout_marginTop="20dp" />
+
+                <com.google.android.material.button.MaterialButton
+                        android:id="@+id/button_next"
+                        android:layout_width="150dp"
+                        android:layout_height="55dp"
+                        android:layout_gravity="top"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="0dp"
+                        android:backgroundTint="@color/button_background_color"
+                        android:fontFamily="@font/poppins_medium"
+                        android:inputType="textCapSentences"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:text="@string/button_finish"
+                        android:textColor="@color/button_text_color"
+                        android:textSize="18sp"
+                        app:cornerRadius="12dp"
+                        android:enabled="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>

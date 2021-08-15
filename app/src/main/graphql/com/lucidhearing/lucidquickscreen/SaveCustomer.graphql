@@ -1,0 +1,8 @@
+mutation SaveCustomer($input:CustomerInput){
+    saveCustomer(input: $input ){
+        customer{
+            id
+            universalID
+        }
+    }
+}

@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">Lucid Quickscreen</string>
+
+    <string name="customer_login_header_message">Before we begin, we need to gather some info from you in order to better guide your personalized results</string>
+    <string name="customer_login_form_firstname">First name</string>
+    <string name="customer_login_form_lastname">Last name</string>
+    <string name="customer_login_form_email_address">Email address</string>
+    <string name="customer_login_form_zipcode">ZIP code</string>
+    <string name="customer_login_form_phone">Phone number</string>
+    <string name="customer_login_form_submit">Get Started</string>
+
+    <string name="button_next">Next</string>
+    <string name="button_finish">Finish</string>
+    <string name="button_dismiss">Dismiss</string>
+    <string name="button_connect">Connect</string>
+    <string name="button_disconnect">Disconnect</string>
+    <string name="button_back">Back</string>
+    <string name="button_begin_setup">Begin Setup</string>
+
+    <string name="question_1">Do you have trouble hearing in restaurants and other loud environments?</string>
+    <string name="question_2">Do you have to turn the TV up to hear the dialog?</string>
+    <string name="question_3">Do you frequently ask people to repeat themselves?</string>
+    <string name="question_4">Do you listen to music for more than 1 hour a day?</string>
+    <string name="answer_yes">YES</string>
+    <string name="answer_no">NO</string>
+
+    <string name="scan_status_ready">Ready to check your hearing</string>
+    <string name="scan_status_progress">Scanning in progress</string>
+    <string name="scan_status_complete">Scan Complete</string>
+    <string name="device_not_connected">Please connect device to check hearing</string>
+    <string name="see_result_message">Click to see what this means to you</string>
+    <string name="result_message">You may have some mild to moderate hearing loss.Please ask an associate about products we offer to help you hear better</string>
+    <string name="email_result_message">You will receive an email shortly with your personalized results and suggestions.</string>
+
+    <string name="error_invalid_firstname">Please enter valid first name(min length: 2 characters)</string>
+    <string name="error_invalid_lastname">Please enter valid last name(min length: 2 characters)</string>
+    <string name="error_invalid_email">Please enter valid email address</string>
+    <string name="error_invalid_zip">Please enter valid zip code</string>
+    <string name="error_invalid_phone">Please enter valid phone number</string>
+
+    <string name="error_unable_to_process">Unable to process request. Please try again.</string>
+    <string name="error_unable_to_scan_wifi">Unable to scan available wifi networks.</string>
+
+    <string name="dialog_confirm_exit_test">Are you sure you want to restart the hearing test?</string>
+    <string name="dialog_confirm_disconnect_wifi">Are you sure you want to disconnect \"%s\" ?</string>
+    <string name="dialog_confirm_connect_wifi">Are you sure you want to connect \"%s\" ?</string>
+
+    <string name="notification_network_connected">Connected to internet.</string>
+    <string name="notification_no_internet">No internet connection.</string>
+
+    <string name="great_news">Great News!</string>
+    <string name="no_recommendation_message">"You\'ve done well protecting your hearing!\nWe\'ll be sure to send you the results with some opportunities for protecting your hearing well into the future."</string>
+
+    <string name="heading_connect_wifi">Connect to Wifi</string>
+    <string name="heading_device_setup">Device Setup</string>
+
+    <string name="status_wifi_connecting">Connecting...</string>
+    <string name="status_wifi_unable_connect">Unable to connect. Please try again.</string>
+    <string name="status_wifi_auth_failure">Authentication failure. Please try again.</string>
+    <string name="alert_network_not_connected">Please connect to the internet to continue.</string>
+
+    <string name="device_setup_form_firstname">First name</string>
+    <string name="device_setup_form_lastname">Last name</string>
+    <string name="device_setup_form_city">Store city</string>
+    <string name="device_setup_form_state">Store state</string>
+    <string name="device_setup_form_store_number">Store number</string>
+    <string name="device_setup_form_submit">Continue</string>
+
+    <string name="contact_support">Contact Support: 800-555-1212</string>
+    <string name="quickscreen_version">HLT Quickscreen v1.0</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

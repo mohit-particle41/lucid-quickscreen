@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/setup_nav_graph"
+        app:startDestination="@id/setupFragment">
+
+    <fragment
+            android:id="@+id/setupFragment"
+            android:name="com.lucidhearing.lucidquickscreen.presentation.setup.SetupFragment"
+            android:label="fragment_setup"
+            tools:layout="@layout/fragment_setup" >
+        <action
+                android:id="@+id/action_setupFragment_to_wifiSetupFragment"
+                app:destination="@id/wifiSetupFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/beginSetupFragment"
+            android:name="com.lucidhearing.lucidquickscreen.presentation.setup.BeginSetupFragment"
+            android:label="fragment_begin_setup"
+            tools:layout="@layout/fragment_begin_setup" >
+        <action
+                android:id="@+id/action_beginSetupFragment_to_storeSetupFragment"
+                app:destination="@id/storeSetupFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/wifiSetupFragment"
+            android:name="com.lucidhearing.lucidquickscreen.presentation.setup.WifiSetupFragment"
+            android:label="fragment_wifi_setup"
+            tools:layout="@layout/fragment_wifi_setup" >
+        <action
+                android:id="@+id/action_wifiSetupFragment_to_beginSetupFragment"
+                app:destination="@id/beginSetupFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/storeSetupFragment"
+            android:name="com.lucidhearing.lucidquickscreen.presentation.setup.StoreSetupFragment"
+            android:label="fragment_store_setup"
+            tools:layout="@layout/fragment_store_setup" />
+</navigation>
